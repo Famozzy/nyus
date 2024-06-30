@@ -34,21 +34,20 @@ render('dashboard-navbar'); ?>
     </div>
     <?php endforeach; ?>
   </section>
-  <section class="my-3">
+  <section class="my-4 p-3 rounded-2 shadow-sm border">
     <a href="/dashboard/article/create" class="btn btn-outline-dark px-4">
-      <i class="bi bi-pencil-square"></i>
       Tambah Artikel
+      <i class="bi bi-pencil-square"></i>
     </a>
     <a href="/dashboard/category/create" class="btn btn-outline-dark px-4">
-      <i class="bi bi-pencil-square"></i>
       Tambah Kategori
+      <i class="bi bi-pencil-square"></i>
     </a>
     <a href="/dashboard/author/create" class="btn btn-outline-dark px-4">
-      <i class="bi bi-pencil-square"></i>
       Tambah Penulis
+      <i class="bi bi-pencil-square"></i>
     </a>
   </section>
-  <!-- table artikel -->
   <section class="table-responsive my-2 shadow rounded-2 px-3 py-4 border">
     <h3 id="artikel" class="border-bottom mt-1">Daftar Artikel</h3>
     <table class="table">

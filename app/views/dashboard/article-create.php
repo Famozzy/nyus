@@ -39,7 +39,7 @@ render('dashboard-navbar'); ?>
       </div>
       <div>
         <button class="btn btn-primary px-4" type="submit" name="submit">
-        <i class="bi bi-pencil-square"></i> Tambah Artikel
+        Tambah Artikel <i class="bi bi-pencil-square"></i>
         </button>
     </form>
   </div>

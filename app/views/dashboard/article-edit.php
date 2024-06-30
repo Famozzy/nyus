@@ -52,7 +52,7 @@ render('dashboard-navbar'); ?>
       </div>
       <div>
         <button class="btn btn-primary px-4" type="submit" name="submit">
-        <i class="bi bi-pencil-square"></i> Simpan Perubahan
+          Simpan Perubahan <i class="bi bi-pencil-square"></i>
         </button>
     </form>
   </div>

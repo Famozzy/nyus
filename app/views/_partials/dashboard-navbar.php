@@ -8,7 +8,7 @@
       <ul class="navbar-nav ms-2">
         <li class="nav-item">
           <a class="nav-link fs-6 text-light" aria-current="page" href="/">
-          <u> < Kembali ke Beranda</u>  
+            <u>Kembali ke Home Page</u>
           </a>
         </li>
       </ul>
