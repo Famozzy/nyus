@@ -1,0 +1,6 @@
+pre {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px !important;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
