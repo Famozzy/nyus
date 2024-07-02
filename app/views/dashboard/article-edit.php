@@ -44,7 +44,7 @@ render('dashboard-navbar'); ?>
       </div>
       <div class="mb-3">
         <label for="thumbnail" class="form-label fw-medium">Thumbnail</label>
-        <input type="file" class="form-control" name="thumbnail" id="thumbnail" accept="image/*" required>
+        <input type="file" class="form-control" name="thumbnail" id="thumbnail" accept="image/*">
         <div>
           <p class="m-0 mt-1">Thumbnail saat ini: </p>
           <img src="<?= '../../' . UPLOAD_PATH . $article['thumbnail'] ?>" alt="thumbnail" class="img-thumbnail">

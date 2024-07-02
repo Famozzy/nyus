@@ -34,13 +34,8 @@ class DashboardController extends Controller {
       'konten'      => $_POST['konten'],
       'kategori'    => $_POST['kategori'],
       'penulis'     => $_POST['penulis'],
-      'thumbnail'   => null,
     ];
 
-    if (isset($_POST['curr_thumbnail'])) {
-      $data['thumbnail'] = $_POST['curr_thumbnail'];
-    }
-    
     $file = $_FILES['thumbnail'];
     $targetDir = UPLOAD_PATH;
     $extFile = pathinfo($file['name'], PATHINFO_EXTENSION);
@@ -51,8 +46,13 @@ class DashboardController extends Controller {
       $data['id'] = $_POST['id'];
     }
 
+    if (isset($_POST['curr_thumbnail']) && $file['size'] == 0) {
+      $data['thumbnail'] = $_POST['curr_thumbnail'];
+    }
+
     if ($file['size'] > 0) {
       $data['thumbnail'] = $fileName;
+      unlink($targetDir . $_POST['curr_thumbnail']);
       move_uploaded_file($file['tmp_name'], $targetFilePath);
     }
 
