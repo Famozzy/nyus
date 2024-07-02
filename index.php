@@ -1,10 +1,16 @@
 <?php
 require_once './_autoload.php';
 
+session_start();
+
 use App\Core\Router;
 use App\Controllers\IndexController;
 use App\Controllers\DashboardController;
 use App\Controllers\ArticleController;
+use App\Controllers\AuthController;
+
+const ADMIN_USERNAME = 'admin';
+const ADMIN_PASSWORD = '123';
 
 const VIEW_PATH = './app/views/';
 const PARTIAL_PATH = VIEW_PATH . '/_partials/';
@@ -17,6 +23,10 @@ function render($file) {
 Router::add('GET','/', [IndexController::class, 'index']);
 Router::add('GET','/article', [ArticleController::class, 'show']);
 Router::add('GET','/dashboard', [DashboardController::class, 'index']);
+
+Router::add('GET','/login', [AuthController::class, 'login']);
+Router::add('POST','/login', [AuthController::class, 'login']);
+Router::add('GET','/logout', [AuthController::class, 'logout']);
 
 Router::add('GET','/dashboard/article/create', [DashboardController::class, 'createArticle']);
 Router::add('POST','/dashboard/article/create', [DashboardController::class, 'postArticle']);

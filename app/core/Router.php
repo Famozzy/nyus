@@ -17,6 +17,13 @@ class Router {
       $path = '/';
       if(isset($_SERVER['PATH_INFO'])) $path = $_SERVER['PATH_INFO'];    
       $method = $_SERVER['REQUEST_METHOD'];
+
+      if(strpos($path, '/dashboard') !== false) {
+        if(!isset($_SESSION['login'])) {
+          header('Location: /login');
+          return;
+        }
+      }
   
       foreach(self::$routes as $route) {
         if($route['method'] == $method && $route['path'] == $path) {

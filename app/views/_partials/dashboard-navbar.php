@@ -11,6 +11,11 @@
             <u>Kembali ke Home Page</u>
           </a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link fs-6 text-light" aria-current="page" href="/logout">
+            <u>Logout</u>
+          </a>
+        </li>
       </ul>
     </div>
   </div>
