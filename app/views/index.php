@@ -14,7 +14,7 @@ render("navbar"); ?>
             <img src="<?= UPLOAD_PATH . $featured["thumbnail"] ?>" alt="thumbnail" height="400" class="rounded ratio ratio-16x9 object-fit-cover" />
           </a>
         </div>
-        <div class="col-lg-4 d-flex flex-column justify-content-center">
+        <div class="col-lg-4 d-flex flex-column justify-content-center mt-3">
           <a href="/article?id=<?= $featured["id"] ?>" class="text-decoration-none text-dark">
             <span class="text-primary fw-medium text-uppercase"><?= $featured["kategori"] ?></span>
             <h2 class="fw-bold fs-2"><?= $featured["judul"] ?></h2>
@@ -46,7 +46,7 @@ render("navbar"); ?>
               class="card-img-top object-fit-cover rounded" height="200" 
             />
           </a>
-          <div class="card-body">
+          <div class="card-body px-0">
             <a href="/article?id=<?= $article["id"] ?>" class="text-decoration-none text-dark">
               <span class="text-primary fw-medium text-uppercase"><?= $article["kategori"] ?></span>
               <h2 class="fw-bold fs-4"><?= $article["judul"] ?></h2>
