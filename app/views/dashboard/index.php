@@ -57,10 +57,10 @@ render('dashboard-navbar'); ?>
           <th scope="col">id</th>
           <th scope="col">Judul</th>
           <th scope="col">Konten</th>
+          <th scope="col">Thumbnail</th>
           <th scope="col">tgl Dibuat</th>
           <th scope="col">Kategori</th>
           <th scope="col">Penulis</th>
-          <th scope="col">Thumbnail</th>
           <th scope="col">Aksi</th>
         </tr>
       </thead>
