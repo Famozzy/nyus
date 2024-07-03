@@ -24,15 +24,13 @@ render("navbar"); ?>
           </a>
           <div>
             <span class="text-capitalize d-block fw-medium"><?= $featured["penulis"] ?></span>
-            <span class="fw-light fs-6 text-muted"><?= Utils::formatDate($featured["tgl_dibuat"]) ?> | </span>
+            <span class="fw-light fs-6 text-muted"><?= Utils::formatDate($featured["tgl_dibuat"]) ?> • </span>
             <span class="fw-light fs-6 text-muted"><?= Utils::calculateReadTime($featured["konten"]) ?> menit baca</span>
           </div>
         </div>
       </div>
     </div>
-    </div>
-    <div class="row mt-4 mx-auto">
-    <div class="row col-lg-10 mx-auto">
+    <div class="row col-lg-10 mx-auto mt-4 px-0">
       <?php
       foreach ($articles as $article):
       $readTime = Utils::calculateReadTime($article["konten"]);
