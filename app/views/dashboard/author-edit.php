@@ -1,7 +1,7 @@
 <?php
 $author = $data['author'];
 
-render('header'); ?>
+render('dashboard-navbar'); ?>
 <section class="container min-vh-100">
   <div class="row mt-5">
     <div class="col-lg-5 mx-auto shadow-sm p-3 mb-5 bg-white rounded">
