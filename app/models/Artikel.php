@@ -15,19 +15,6 @@ class Artikel extends Model {
       ORDER BY a.dibuat DESC
     SQL;
 
-    // $by = $filter['by'] ?? null;
-    // switch ($by) {
-    //   case 'kategori':
-    //     $sql .= " WHERE k.id = '{$filter['id']}'";
-    //     break;
-    //   case 'penulis':
-    //     $sql .= " WHERE p.id = '{$filter['id']}'";
-    //     break;
-    //   case 'artikel':
-    //     $sql .= " WHERE a.id = '{$filter['id']}'";
-    //     break;
-    // }
-
     return $this->db->query($sql)->fetchAll();
   }
 
